@@ -26,7 +26,7 @@ header > .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 200px;
+  max-width: 230px;
   width: 100%;
 }
 
@@ -178,47 +178,6 @@ nav > .nav_two div {
   cursor: pointer;
 }
 
-footer {
-  background-color: #252323;
-}
-
-footer > div{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 94px 0 82px;
-  padding: 43px 0;
-  border-bottom: 1px solid #9EA2A2;
-}
-
-footer > div > img{
-  width: 114px;
-  height: 40px;
-}
-
-footer > p{
-  padding: 23px 82px 28px;
-  color: #9EA2A2;
-  font-family: Barlow;
-  font-size: 13px;
-}
-
-footer .footer_options {
-  display: flex;
-  justify-content: space-between;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-
-footer .footer_options div {
-  margin: 0 10px;
-  cursor: pointer;
-  line-height: 40px;
-}
-
 @media screen and (max-width : 1200px){
 
   header .header {
@@ -280,33 +239,6 @@ footer .footer_options div {
   
   .dashboard > div p {
     font-size: 20px;
-  }
-
-  footer > div {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 15px 0;
-    margin: 0 54px 0 42px;
-  }
-
-  footer .footer_options {
-    display: block;
-    width: 100%;
-  }
-
-  footer .footer_options div {
-    text-align: center;
-    line-height: 60px;
-    margin: 0;
-  }
-
-  footer .footer_options div:last-child {
-    border-bottom: 1px solid #9EA2A2;
-    margin-bottom: 20px;
-  }
-  footer > p{
-    padding: 23px 82px 28px;
-    text-align: center;
   }
 }
 
