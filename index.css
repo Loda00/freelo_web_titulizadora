@@ -69,6 +69,71 @@
   color: #53565A;
 }
 
+.content_cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-gap: 32px;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(186, 186, 186, 0.18);
+  border-radius: 8px;
+  padding: 36px 42px;
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: .3s ease-out;
+}
+
+.card > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card > div > img {
+  margin-right: 10px;
+}
+
+.card > div > span {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #252323;
+}
+
+.card > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+  margin: 19px 0 35px;
+}
+
+.card > .button {
+  display: inline-block;
+  border: 2px solid #003057;
+  box-sizing: border-box;
+  border-radius: 40px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #003057;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
 @media screen and (max-width : 800px){
   .custom_paragraph > h2,h3 {
     font-size: 40px;
@@ -82,6 +147,22 @@
   .custom_paragraph > h2,h3 {
     font-size: 24px;
     font-family: Barlow;
+  }
+
+  .content_cards {
+    display: block;
+  }
+  .card {
+    margin-bottom: 32px;
+  }
+
+  .card > div {
+    margin-bottom: 32px;
+    align-items: center;
+  }
+
+  .card > div > span{
+    font-size: 20px;
   }
 }
 
