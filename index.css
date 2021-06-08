@@ -136,6 +136,98 @@
   cursor: pointer;
 }
 
+.list_items {
+  background: #FFFFFF;
+  border: 1px solid #E5E2E2;
+  border-radius: 8px;
+}
+
+.list_items > .item {
+  display: flex;
+  padding: 52px 42px;
+}
+
+.list_items > .item:nth-child(2n - 2) {
+  background-color: #EEF1F3;
+}
+
+.item_info {
+  width: calc(100% - 182px);
+  padding-right: 42px;
+}
+
+.item_info > .item_info_title {
+  height: 55px;
+  margin-bottom: 10px;
+  font-family: Barlow;
+  font-weight: bold;
+  font-size: 28px;
+  color: #252323;
+}
+
+.item_info > .item_info_paragraph {
+  font-family: Barlow;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+}
+
+.item_button_export {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  border-left: 1px solid #BECAD3;
+  padding-left: 42px;
+}
+
+.item_button_export > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #003057;
+  box-sizing: border-box;
+  border-radius: 40px;
+  max-width: 140px;
+  width: 100%;
+  padding: 14px 15.5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  color: #003057;
+}
+
+@media screen and (max-width : 900px){
+  .item_info > .item_info_title {
+    font-size: 24px;
+  }
+
+  .item_button_export {
+    padding-left: 24px;
+    width: 152px;
+  }
+  
+  .item_info {
+    padding-right: 24px;
+    width: calc(100% - 152px);
+  }
+
+  .list_items > .item {
+    padding: 42px 24px;
+  }
+
+  .item_info > .item_info_title {
+    font-size: 24px;
+  }
+  
+  .item_info > .item_info_paragraph {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width : 800px){
   .custom_paragraph > h2,h3 {
     font-size: 40px;
@@ -175,6 +267,30 @@
   .card > .card_title > span{
     font-size: 20px;
   }
+
+  .list_items > .item{
+    display: block;
+    padding: 42px 16px;
+  }
+
+  .item_info {
+    width: 100%;
+  }
+
+  .item_button_export {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    border-left: none;
+    padding-top: 24px;
+    margin-top: 24px;
+    border-top: 1px solid #F2EFEF;;
+  }
+
+  .item_info > .item_info_title {
+    font-size: 20px;
+  }  
 }
 
 
