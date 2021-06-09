@@ -32,6 +32,10 @@
   width: 25%;
 }
 
+.data-info > div > p {
+  font-size: 28px;
+}
+
 .data-info .info {
   display: flex;
   justify-content: flex-start;
@@ -65,6 +69,9 @@
 @media screen and (max-width : 768px){
   .dashboard {
     padding: 0px 30px;
+  }
+  .data-info > div > p {
+    font-size: 24px;
   }
 }
 

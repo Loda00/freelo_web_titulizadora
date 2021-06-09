@@ -182,6 +182,11 @@
   padding-left: 42px;
 }
 
+.item_button_export > a:hover {
+  transform: scale(1.05);
+  transition: .3s ease-out;
+}
+
 .item_button_export > a {
   display: flex;
   align-items: center;
@@ -198,6 +203,7 @@
   font-style: normal;
   font-weight: bold;
   color: #003057;
+  transition: .3s ease-in-out;
 }
 
 @media screen and (max-width : 900px){

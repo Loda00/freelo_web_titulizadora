@@ -31,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 90px 20px 39px;
+  padding: 20px 96px;
   z-index: 999;
 }
 
@@ -60,7 +60,7 @@ nav {
 nav > .nav_one {
   width: 396px;
   background-color: #B7B09C;
-  padding: 8px 39px;
+  padding: 8px 0px 8px 96px;
 }
 
 nav > .nav_two {
@@ -121,7 +121,7 @@ nav > .nav_two.children a:hover::after {
   }
   nav > .nav_two {
     width: calc(100% - 270px);
-    padding: 10px 30px 10px 0px;
+    padding: 10px 40px 10px 0px;
   }
 
   nav > .nav_two a {
@@ -268,6 +268,9 @@ nav > .nav_two.children a:hover::after {
     background: url('../images/dashboard-700.svg');
     background-position: right;
     background-size: cover;
+  }
+  header {
+    padding: 20px 40px;
   }
 }
 
