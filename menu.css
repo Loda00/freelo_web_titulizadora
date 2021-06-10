@@ -178,7 +178,7 @@ nav > .nav_two.children a:hover::after {
     position: relative;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ .nav-mobile {
+  .hamburger > #check-nav:checked ~ .nav-mobile {
     display: block;
     position: fixed;
     background-color: #252323;
@@ -191,7 +191,7 @@ nav > .nav_two.children a:hover::after {
     right: 0;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ label {
+  .hamburger > #check-nav:checked ~ label {
     position: fixed;
     right: 39px;
     top: 30px;
@@ -241,17 +241,17 @@ nav > .nav_two.children a:hover::after {
     transition: .1s ease-in-out;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ label .two {
+  .hamburger > #check-nav:checked ~ label .two {
     display: none;
     transition: .1s ease-in-out;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ label .one {
+  .hamburger > #check-nav:checked ~ label .one {
     transform: rotate(45deg) translate(6px, 8px);
     transition: .3s ease-in-out;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ label .three {
+  .hamburger > #check-nav:checked ~ label .three {
     transform: rotate(135deg) translate(-1.5px, 3px);
     transition: .3s ease-in-out;
   }
@@ -287,7 +287,7 @@ nav > .nav_two.children a:hover::after {
     padding: 8px 16px 8px;;
   }
 
-  .hamburger > [type="checkbox"]:checked ~ label {
+  .hamburger > #check-nav:checked ~ label {
     position: fixed;
     right: 16px;
     top: 30px;

@@ -11,7 +11,7 @@
 
 @media screen and (max-width : 900px){
   .body {
-    max-width: 658px;
+    max-width: 788px;
   }
 }
 
@@ -23,13 +23,13 @@
 
 @media screen and (max-width :680px){
   .body {
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 
 @media screen and (max-width : 620px){
   .body {
-    max-width: 400px;
+    max-width: 470px;
   }
 }
 

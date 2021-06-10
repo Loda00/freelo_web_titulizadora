@@ -190,7 +190,7 @@
 .item_button_export > a {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   border: 2px solid #003057;
   box-sizing: border-box;
   border-radius: 40px;
@@ -204,6 +204,75 @@
   font-weight: bold;
   color: #003057;
   transition: .3s ease-in-out;
+}
+
+.cards_people {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_poeple {
+  width: min-content;
+  height: min-content;
+  border: 1px solid #E5E2E2;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 15px;
+  margin-right: 14px;
+}
+
+.card_poeple > .card_info {
+  padding: 16px;
+}
+
+.card_info > label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #53565A;
+  cursor: pointer;
+}
+
+.card_info > span {
+  font-family: Barlow;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.11px;
+  color: #9EA2A2;
+}
+
+.card_info > .description {
+  display: none;
+  margin-top: 24px;
+  font-family: Barlow;
+  font-size: 16px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+}
+
+.arrow_info {
+  transition: .3s ease-in;
+}
+
+#arrow_slide1, #arrow_slide2, #arrow_slide3 {
+  display: none;
+}
+
+#arrow_slide1:checked ~ label img,
+#arrow_slide2:checked ~ label img,
+#arrow_slide3:checked ~ label img
+ {
+  transform: rotate(180deg);
+}
+
+#arrow_slide1:checked ~ .description,
+#arrow_slide2:checked ~ .description,
+#arrow_slide3:checked ~ .description {
+  display: block;
 }
 
 @media screen and (max-width : 900px){
@@ -246,6 +315,13 @@
   }
   .card {
     padding: 28px 24px;
+  }
+  .card_info > label {
+    font-size: 22px;
+  }
+
+  .card_info > span {
+    font-size: 16px;
   }
 }
 
@@ -296,7 +372,11 @@
 
   .item_info > .item_info_title {
     font-size: 20px;
-  }  
+  }
+  .card_info > label {
+    font-size: 18px;
+  }
+
 }
 
 
