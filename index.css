@@ -157,7 +157,7 @@
 }
 
 .item_info > .item_info_title {
-  height: 55px;
+  min-height: 55px;
   margin-bottom: 10px;
   font-family: Barlow;
   font-weight: bold;
@@ -265,7 +265,7 @@
 #arrow_slide1:checked ~ label img,
 #arrow_slide2:checked ~ label img,
 #arrow_slide3:checked ~ label img
- {
+{
   transform: rotate(180deg);
 }
 
@@ -273,6 +273,126 @@
 #arrow_slide2:checked ~ .description,
 #arrow_slide3:checked ~ .description {
   display: block;
+}
+
+.wrapper_input {
+  position: relative;
+  min-height: 85px;
+  width: 100%;
+}
+
+.wrapper_input .textfield {
+  margin-top: 18px;
+  padding: 16px 24px 16px 24px;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  border: 1.5px solid rgba(105, 97, 88, 0.4);
+  box-shadow: 0px 2px 16px rgba(190, 202, 211, 0.4);
+  border-radius: 40px;
+  color: #6A798B;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.textfield.textfield-area {
+  height: auto;
+  line-height: normal;
+  overflow-y: hidden;
+  border-radius: 12px;
+}
+
+.wrapper_input .textfield::placeholder {
+  color: transparent; 
+}
+.wrapper_input .textfield:hover {
+  border: 1.5px solid rgba(105, 97, 88, 0.5);
+  box-shadow: 0px 0px 0px 2px rgba(105, 97, 88, 0.2);
+  /* border-radius: 40px;  */
+}
+.wrapper_input .textfield:focus {
+  /* border: 1.5px solid #00AE99; */
+  /* box-shadow: 0px 0px 0px 2px rgba(0, 164, 153, 0.2); */
+  /* border-radius: 40px;  */
+}
+.wrapper_input .textfield:focus ~ .placeholder {
+  color: #6A798B;
+  font-size: 14px; 
+}
+.wrapper_input .textfield:focus::placeholder {
+  transition: .7s;
+  color: #6A798B; 
+}
+.wrapper_input .placeholder {
+  position: absolute;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  height: 15px;
+  z-index: 1;
+  top: 36px;
+  left: 16px;
+  color: rgba(105, 97, 88, 0.7);
+  padding: 0 5px;
+  pointer-events: none; 
+}
+
+/* .disabled-input .textfield {
+  background: #F7F7F8;
+  cursor: not-allowed; 
+}
+.disabled-input .textfield:disabled ~ .placeholder {
+  top: 3px;
+  font-size: 14px; 
+}
+.disabled-input .textfield:disabled:not(:valid) ~W .placeholder {
+  top: 3px;
+  font-size: 14px;
+} 
+
+.error-input .textfield {
+  border: 1.5px solid #FF4646 !important;
+  box-shadow: none; 
+}
+.error-input .textfield:hover {
+  border: 1.5px solid #FF4646 !important;
+  box-shadow: none; 
+}
+
+.error-input .error-msg {
+  display: block;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  height: 18px;
+  line-height: 16px;
+  color: #FF4646 !important;
+  padding: 3px 0 0 3px; 
+}
+
+.error-input .placeholder {
+  color: #FF4646 !important; 
+}
+*/
+
+.wrapper_input .textfield:focus ~ .placeholder,
+.wrapper_input .textfield:not(:focus):valid ~ .placeholder {
+  top: -4px;
+  font-size: 14px; 
+}
+
+.textfield, .placeholder {
+  transition: ease-in-out 0.2s all;
+  -webkit-transition: ease-in-out 0.2s all;
+  -moz-transition: ease-in-out 0.2s all;
+  -o-transition: ease-in-out 0.2s all;
 }
 
 @media screen and (max-width : 900px){

@@ -1,0 +1,63 @@
+.group_list {
+  width: 100%;
+}
+
+.group_list li:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.group_list li{
+  padding-left: 24px;
+  position: relative;
+  list-style: none;
+  font-family: FS Joey;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #53565A;
+}
+
+.group_list li::before {
+  content: '•';
+  position: absolute;
+  color: #B7B09C;
+  font-size: 20px;
+  line-height: 15px;
+  left: -1px;
+}
+
+.sub_title {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #252323;
+}
+
+.can_reports {
+  display: flex;
+  justify-content: space-between;
+}
+
+.can_reports .report{
+  display: flex;
+  background-color: #968F7C;
+  width: 48%;
+  min-height: 96px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.info_report {
+  color: white;
+  padding-left: 35px;
+  line-height: 22px;
+  font-family: Barlow;
+}
+
+.info_report a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
