@@ -1,0 +1,31 @@
+.form_contact {
+  padding: 64px 30px;
+}
+
+.form_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control_input {
+  width: 48%;
+}
+
+.content_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width : 650px){
+  .form_input {
+    display: block;
+  }
+  .control_input {
+    width: 100%;
+  }
+
+  .content_button {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -61,3 +61,43 @@
   color: white;
   font-weight: bold;
 }
+
+.remember {
+  padding: 64px;
+  color: white;
+  background-color: #4C5662;
+  font-family: Barlow;
+}
+
+.remember .sub_title {
+  color: white;
+}
+
+.remember p {
+  font-size: 18px;
+  letter-spacing: 0.11px;
+}
+
+@media screen and (max-width : 768px){
+  .sub_title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .remember p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 650px){
+  .sub_title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .can_reports {
+    display: block;
+  }
+  .can_reports .report{
+    width: 100%;
+    margin-top: 15px;
+  }
+}
