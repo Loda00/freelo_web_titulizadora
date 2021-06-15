@@ -1,9 +1,18 @@
 .section_header {
+  position: relative;
   background: url('../images/dashboard.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.mouse {
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
 }
 
 .section_header.children {
@@ -44,10 +53,12 @@ header > .header {
 }
 
 .contact_radius {
+  text-decoration: none;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
   line-height: 30px;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 nav {
@@ -204,6 +215,7 @@ nav > .nav_two.children a:hover::after {
   }
 
   .nav-mobile_button {
+    display: block;
     margin: 0 auto;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -216,6 +228,8 @@ nav > .nav_two.children a:hover::after {
     font-size: 16px;
     letter-spacing: 1px;
     color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .nav-mobile_item {
@@ -271,6 +285,9 @@ nav > .nav_two.children a:hover::after {
   }
   header {
     padding: 20px 40px;
+  }
+  .mouse {
+    display: none;
   }
 }
 
