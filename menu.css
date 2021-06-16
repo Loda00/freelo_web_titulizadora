@@ -15,6 +15,22 @@
   right: 0px;
 }
 
+#svg_mouse {
+  animation: scroll 1.5s ease-in infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateY(30px);
+    opacity: .2;
+  }
+
+  from {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
 .section_header.children {
   background: none;
   height: 340px;
