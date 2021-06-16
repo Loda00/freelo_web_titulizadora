@@ -546,4 +546,10 @@
   }
 }
 
+@media screen and (max-width : 450px){
+  .list_items {
+    transform: scale(1.09) translateY(40px);
+  }
+}
+
 

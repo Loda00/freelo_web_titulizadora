@@ -79,7 +79,7 @@ nav > .nav_two {
   justify-content: flex-end;
   width: calc(100% - 396px);
   background-color: rgba(76, 86, 98, 0.45);
-  padding: 10px 90px 10px 0px;
+  padding: 0px 90px 0px 0px;
 }
 
 nav > .nav_two.children {
@@ -100,17 +100,20 @@ nav > .nav_two.children a {
   color: #252323;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 nav > .nav_two.children a::after {
   content: "";
   display: block;
   background-color: #252323;
-  height: 3px;
-  
+  height: 5px;
   transform: scale(0, 1);
+  margin-top: 6px;
   transition: 0.2s;
   transform-origin: center left;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 nav > .nav_two.children a:hover::after {
@@ -132,7 +135,7 @@ nav > .nav_two.children a:hover::after {
   }
   nav > .nav_two {
     width: calc(100% - 270px);
-    padding: 10px 40px 10px 0px;
+    padding: 0px 40px 0px 0px;
   }
 
   nav > .nav_two a {
