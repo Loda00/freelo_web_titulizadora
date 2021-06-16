@@ -168,6 +168,10 @@
   transition: .2s ease-out;
 }
 
+.card > .no_button_plus {
+  height: 47px;
+}
+
 .list_items {
   background: #FFFFFF;
   border: 1px solid #E5E2E2;
@@ -338,7 +342,6 @@
 }
 
 .textfield.textfield_select {
-  border-radius: 12px;
   appearance: none;
   background-repeat: no-repeat;
   background-position: right center;
