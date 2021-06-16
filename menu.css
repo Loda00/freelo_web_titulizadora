@@ -88,7 +88,7 @@ nav > .nav_two.children {
 
 nav > .nav_two a {
   text-decoration: none;
-  margin: 0 15px;
+  margin: 10px 15px 0px 15px;
   cursor: pointer;
 }
 
@@ -135,11 +135,11 @@ nav > .nav_two.children a:hover::after {
   }
   nav > .nav_two {
     width: calc(100% - 270px);
-    padding: 0px 40px 0px 0px;
+    padding: 0px 25px 0px 0px;
   }
 
   nav > .nav_two a {
-    margin: 0 8px;
+    margin: 10px 10px 0 10px;
   }
 
   nav > .nav_one {
