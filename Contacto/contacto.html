@@ -105,13 +105,17 @@
         <div class="form_input">
           <div class="control_input">
             <div class="wrapper_input">
-              <select class="textfield textfield_select" autofocus required name="" id="">
-                <option value="" hidden></option>
-                <option value="">Option 1</option>
-                <option value="">Option 1</option>
-                <option value="">Option 1</option>
-              </select>
-              <span class="placeholder">Número de documento</span>
+              <div class="drop-down-list" id="select_type_document">
+                <input class="textfield" autofocus type="text" name="" id="" required placeholder="">
+                <a class="options">
+                  <div valueOption="1" a="a" >Option 1 </div>
+                  <div valueOption="2" a="a" >Option 2</div>
+                  <div valueOption="3" a="a" >Option 3</div>
+                  <div valueOption="4" a="a" >Option 4</div>
+                  <div valueOption="5" a="a" >Option 5</div>
+                </a>
+                <span class="placeholder">Tipo de documento</span>
+              </div>
             </div>
           </div>
           <div class="control_input">
@@ -176,6 +180,14 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+    let optionTypeDocument = document.querySelector('#select_type_document > .options')
+    let valueTypeDocument = document.querySelector('#select_type_document > .textfield')
+
+    optionTypeDocument.addEventListener('click', function(e) {
+      console.log('e1', e.target.attributes[0].value)
+      console.log('e2', e.target.innerHTML)
+      valueTypeDocument.value = e.target.innerHTML
+    })
   </script>
 </body>
 </html>
