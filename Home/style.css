@@ -50,6 +50,7 @@
 .border-left {
   border-left: 1px solid #BECAD3;
   padding-left: 20px;
+  transition: .3s ease-in;
 }
 
 @media screen and (max-width : 1200px){

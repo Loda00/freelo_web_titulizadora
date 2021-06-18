@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: FS_Joey_Heavy;
+  src: url('fonts/FS_Joey-Heavy.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .e-text-white {
   color: #FFFFFF;
 }
@@ -41,7 +48,7 @@
 }
 
 .custom_paragraph > h2,h3 {
-  font-family: FS Joey;
+  font-family: 'FS_Joey_Heavy';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -100,7 +107,7 @@
   border-radius: 8px;
   padding: 42px 62px;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
