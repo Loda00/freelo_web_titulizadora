@@ -179,7 +179,10 @@
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      easing: 'linear',
+      duration: 1000
+    });
     let optionTypeDocument = document.querySelector('#select_type_document > .options')
     let valueTypeDocument = document.querySelector('#select_type_document > .textfield')
 
