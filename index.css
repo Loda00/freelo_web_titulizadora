@@ -60,7 +60,6 @@
   font-weight: bold;
   font-size: 48px;
   color: #252323;
-  margin-bottom: 32px;
 }
 
 .custom_paragraph > h2::before {
@@ -81,6 +80,7 @@
   line-height: 26px;
   letter-spacing: 0.11px;
   color: #53565A;
+  margin-top: 32px;
 }
 
 .section_card_description {
@@ -363,6 +363,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   background-position: 96% 50%;
+  cursor: pointer;
 }
 
 .textfield.textfield_select:focus {
@@ -458,7 +459,7 @@
 .drop-down-list > .options {
   display: none;
   position: absolute;
-  bottom: -125px;
+  top: 80px;
   z-index: 999;
   width: 100%;
   background-color: #EFF1F0;
