@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: FS_Joey_Bold;
+  src: url('fonts/FS_Joey-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .e-text-white {
   color: #FFFFFF;
 }
@@ -48,7 +55,7 @@
 }
 
 .custom_paragraph > h2,h3 {
-  font-family: 'FS_Joey_Heavy';
+  font-family: 'FS_Joey_Bold';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -358,6 +365,10 @@
   background-position: 96% 50%;
 }
 
+.textfield.textfield_select:focus {
+  background-image: url('./images/arrow_up.png');
+}
+
 .textfield.textfield-area {
   height: auto;
   line-height: normal;
@@ -594,6 +605,10 @@
 
   .card_info > span {
     font-size: 16px;
+  }
+
+  .cards_people {
+    justify-content: center;
   }
 }
 
