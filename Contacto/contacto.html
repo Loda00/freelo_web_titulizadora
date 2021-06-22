@@ -113,22 +113,24 @@
             </div>
           </div>
           <div class="control_input">
-            <div class="wrapper_input">
-              <input class="textfield" autofocus type="text" name="" id="" required placeholder="Número de documento">
+            <!-- clase de error "error-input" -->
+            <div class="wrapper_input error-input">
+              <input class="textfield" type="text" maxlength="11" name="" id="number_document" required placeholder="Número de documento">
               <span class="placeholder">Número de documento</span>
+              <!-- <span class="error-msg">Error </span> -->
             </div>
           </div>
         </div>
         <div class="form_input">
           <div class="control_input">
             <div class="wrapper_input">
-              <input class="textfield" autofocus type="text" name="" id="" required placeholder="Nombre completo">
+              <input class="textfield"  type="text" name="" id="" required placeholder="Nombre completo">
               <span class="placeholder">Nombre completo</span>
             </div>
           </div>
           <div class="control_input">
             <div class="wrapper_input">
-              <input class="textfield" autofocus type="text" name="" id="" required placeholder="Correo eletrónico">
+              <input class="textfield"  type="text" name="" id="" required placeholder="Correo eletrónico">
               <span class="placeholder">Correo eletrónico</span>
             </div>
           </div>
@@ -136,7 +138,7 @@
         <div class="form_input">
           <div class="control_input">
             <div class="wrapper_input">
-              <input class="textfield" autofocus type="text" name="" id="" required placeholder="Teléfono">
+              <input class="textfield"  type="text" name="" id="" required placeholder="Teléfono">
               <span class="placeholder">Teléfono</span>
             </div>
           </div>
@@ -190,7 +192,6 @@
     optionTypeDocumentContent.addEventListener('click', () => {
       optionTypeDocument.style.display = 'block'
     })
-    
   </script>
 </body>
 </html>
