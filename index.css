@@ -79,6 +79,14 @@
   margin-bottom: 15px;
 }
 
+.custom_paragraph.center_custom_paragraph {
+  text-align: center;
+}
+
+.custom_paragraph.center_custom_paragraph > h2::before {
+  margin: 15px auto;
+}
+
 .custom_paragraph > p {
   font-family: Barlow;
   font-style: normal;
@@ -581,7 +589,7 @@
   font-family: Barlow;
   background: #E3E829;
   border: 2px solid #E3E829;
-  border-radius: 40px;
+  border-radius: 8px;
   width: max-content;
   padding: 15px 48px;
   text-align: center;
