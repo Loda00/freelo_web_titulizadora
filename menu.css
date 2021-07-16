@@ -1,10 +1,10 @@
 .section_header {
   position: relative;
-  background: url('../images/dashboard.svg');
+  background: url('../images/dashboard_desktop.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .mouse {
@@ -328,7 +328,7 @@ nav > .nav_two.children a:hover::after {
 
 @media screen and (max-width : 768px){
   .section_header {
-    background: url('../images/dashboard-700.svg');
+    background: url('../images/dashboard_tablet.png');
     background-position: right;
     background-size: cover;
   }
@@ -362,5 +362,14 @@ nav > .nav_two.children a:hover::after {
   .nav-mobile_item {
     padding: 13px 0px 13px 0px;
     margin: 0px 16px 0 16px;
+  }
+}
+
+@media screen and (max-width : 500px){
+  .section_header {
+    background: url('../images/dashboard_mobile.png');
+    background-position: right;
+    background-size: cover;
+    height: 85vh;
   }
 }

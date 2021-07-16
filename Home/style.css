@@ -24,16 +24,24 @@
 }
 
 .data-info {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  margin: 350px 11%;
+  height: 200px;
 }
 
 .data-info > div {
-  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 266px;
+  background: white;
 }
 
 .data-info > div > p {
   font-size: 28px;
+  text-align: center;
 }
 
 .data-info .info {
@@ -53,6 +61,169 @@
   transition: .3s ease-in;
 }
 
+.grid_services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 32px;
+  margin-bottom: 120px;
+}
+
+.grid_services > .item_service {
+  background: #F9FAFB;
+  max-width: 376px;
+  height: auto;
+  padding: 46px 42px 90px;
+  border: 2px solid #EEF1F3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.grid_services > .item_service:hover {
+  background: #4C5662;
+  transition: .3s ease-in;
+}
+
+.grid_services > .item_service:hover > .service_img > svg > path {
+  fill: white;
+}
+
+.item_service > .service_img {
+  text-align: left;
+}
+
+.item_service > .service_img {
+  text-align: left;
+}
+
+.item_service > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  color: #252323;
+  text-align: left;
+}
+
+.grid_services > .item_service:hover > p {
+  color: white;
+}
+
+.item_service > div {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.11px;
+  color: #53565A;
+  text-align: left;
+}
+
+.grid_services > .item_service:hover > div {
+  color: white;
+}
+
+.our_products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_products > div {
+  max-width: 376px;
+  /* min-height: 448px; */
+  background: black;
+}
+
+.our_products > div > img {
+  width: 100%;
+}
+
+.detail_new_product {
+  padding: 32px;
+}
+
+.detail_new_product > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.detail_new_product > span {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.11px;
+  color: #BDBDBD;
+}
+
+.frame_sura {
+  position: relative;
+  display: flex;
+}
+
+.frame_sura > div:first-child img {
+  height: 100%;
+}
+
+.frame_sura > .frame_sura_info {
+  width: calc(100% - 606px);
+  background-color: #003057;
+  padding: 69px 0px 0px 100px;
+}
+
+.frame_sura_info > h2 {
+  font-family: FS Joey;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+
+.frame_sura_info > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.11px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width : 1240px){
+  .frame_sura > .frame_sura_info {
+    width: calc(100% - 339px);
+    background-color: #003057;
+    padding: 69px 0px 0px 100px;
+  }
+
+  .data-info {
+    position: absolute;
+    display: flex;
+    margin: 300px 11%;
+    height: 136px;
+  }
+  
+  .data-info > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 171px;
+    max-width: 220px;
+    width: 100%;
+    background: white;
+  }
+}
+
 @media screen and (max-width : 1200px){
   .dashboard {
     /* padding-left: 79px; */
@@ -67,10 +238,29 @@
   }
 }
 
-@media screen and (max-width : 768px){
-  .dashboard {
-    /* padding: 0px 30px; */
+@media screen and (max-width : 868px){
+  .grid_services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 32px;
   }
+
+  .grid_services > .item_service {
+    height: auto;
+    max-height: none;
+    padding: 44px 25px;
+  }
+
+  .our_products > div {
+    margin: 0 auto 25px;
+  }
+
+  .detail_new_product {
+    padding: 16px;
+    max-width: 222px;
+  }
+
   .data-info > div > p {
     font-size: 24px;
   }
@@ -104,7 +294,34 @@
   }
 }
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 550px){
+  .our_products {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .our_products > div {
+    margin: 0 auto 25px;
+  }
+
+  .detail_new_product {
+    padding: 24px;
+  }
+
+  .grid_services > .item_service {
+    height: auto;
+    max-height: none;
+    padding: 24px;
+    justify-self: center;
+  }
+
+  .grid_services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 32px;
+  }
+
   .dashboard > div h1 {
     font-size: 24px;
   }
