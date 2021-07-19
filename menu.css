@@ -167,6 +167,10 @@ nav > .nav_two.children a:hover::after {
   background-position: left;
 }
 
+.show_desktop {
+  display: block;
+}
+
 @media screen and (max-width : 1200px){
   .container_header {
     padding: 20px 39px 20px 39px;
@@ -184,6 +188,10 @@ nav > .nav_two.children a:hover::after {
     /* width: 270px; */
     /* padding: 8px 39px 8px; */
     text-align: left;
+  }
+
+  .show_desktop {
+    display: none;
   }
 }
 
