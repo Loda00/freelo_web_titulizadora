@@ -111,10 +111,6 @@
   margin-bottom: 16px;
 }
 
-.section_card_description > h2::before {
-  background-color: #252323;
-}
-
 .content_cards {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -296,7 +292,7 @@
   justify-content: space-around;
   border: 2px solid #252323;
   box-sizing: border-box;
-  border-radius: 40px;
+  border-radius: 8px;
   max-width: 140px;
   width: 100%;
   padding: 14px 15.5px;
@@ -361,20 +357,22 @@
   transition: .3s ease-in;
 }
 
-#arrow_slide1, #arrow_slide2, #arrow_slide3 {
+#arrow_slide1, #arrow_slide2, #arrow_slide3, #arrow_slide4 {
   display: none;
 }
 
 #arrow_slide1:checked ~ label img,
 #arrow_slide2:checked ~ label img,
-#arrow_slide3:checked ~ label img
+#arrow_slide3:checked ~ label img,
+#arrow_slide4:checked ~ label img
 {
   transform: rotate(180deg);
 }
 
 #arrow_slide1:checked ~ .description,
 #arrow_slide2:checked ~ .description,
-#arrow_slide3:checked ~ .description {
+#arrow_slide3:checked ~ .description,
+#arrow_slide4:checked ~ .description {
   display: block;
 }
 
@@ -391,7 +389,7 @@
   height: 56px;
   line-height: 56px;
   border: 1.5px solid white;
-  border-radius: 40px;
+  border-radius: 8px;
   color: #6A798B;
   font-family: Barlow;
   font-style: normal;
@@ -420,7 +418,6 @@
   height: auto;
   line-height: normal;
   overflow-y: hidden;
-  border-radius: 12px;
 }
 
 .wrapper_input .textfield::placeholder {
@@ -614,7 +611,8 @@
   font-family: Barlow;
   color: #5E6165;
   font-size: 16px;
-  transform: translateX(-30px);
+  text-transform: uppercase;
+  /* transform: translateX(-30px); */
 }
 
 .come_back a {
@@ -628,6 +626,16 @@
 
 .come_back span {
   font-weight: 500;
+}
+
+.sec_directorio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_directorio > div:first-child {
+  padding-right: 25px;
+  padding-top: 100px;
 }
 
 @media screen and (max-width : 900px){
@@ -678,11 +686,13 @@
   .card_info > span {
     font-size: 16px;
   }
-
-  .cards_people {
-    justify-content: center;
-  }
 }
+
+.separator {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
+
 
 @media screen and (max-width : 675px){
   .content_cards {
@@ -693,6 +703,24 @@
   }
   .come_back {
     font-size: 12px;
+  }
+
+  .cards_people {
+    justify-content: center;
+  }
+  
+  .card_poeple {
+    margin-right: 0px;
+  }
+
+  .sec_directorio {
+    display: block;
+  }
+  
+  .sec_directorio > div:first-child {
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
 }
 
@@ -767,7 +795,7 @@
 
 @media screen and (max-width : 620px){
   .come_back {
-    transform: translateX(-14px);
+    /* transform: translateX(-14px); */
   }
 }
 

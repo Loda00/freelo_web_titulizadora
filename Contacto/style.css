@@ -1,5 +1,7 @@
 .form_contact {
-  padding: 64px 30px;
+  padding: 42px 52px;
+  background-color: #4C5662;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .form_input {
@@ -14,6 +16,21 @@
 .content_button {
   display: flex;
   justify-content: flex-end;
+}
+
+.content_form_contact {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.form_contact {
+  width: calc(100% - 511px);
+}
+
+@media screen and (max-width : 1250px){
+  .content_form_contact {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width : 650px){

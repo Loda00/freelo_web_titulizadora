@@ -479,11 +479,6 @@
   }
 }
 
-.separator {
-  padding-top: 120px !important;
-  padding-bottom: 120px !important;
-}
-
 @media screen and (max-width : 750px){
   .frame_sura {
     display: block;

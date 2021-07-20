@@ -44,10 +44,6 @@
             <span>Directorio</span>
             <img src="../images/angle-down.png" alt="">
           </a>
-          <a href="../AltaGerencia/altaGerencia.html" class="nav-mobile_item">
-            <span>Alta gerencia</span>
-            <img src="../images/angle-down.png" alt="">
-          </a>
           <a href="../NormativaInterna/normativaInterna.html" class="nav-mobile_item">
             <span>Normativa interna</span>
             <img src="../images/angle-down.png" alt="">
@@ -71,7 +67,6 @@
         <div class="nav_two children">
           <a href="../GobiernoCorporativo/gobiernoCorporativo.html" class="e-text-white font-barlow e-text-medium">Gobierno corporativo</a>
           <a href="../Directorio/index.html" class="e-text-white font-barlow e-text-medium">Directorio</a>
-          <a href="../AltaGerencia/altaGerencia.html" class="e-text-white font-barlow e-text-medium">Alta gerencia</a>
           <a href="../NormativaInterna/normativaInterna.html" class="e-text-white font-barlow e-text-medium">Normativa interna</a>
           <a href="../lineaEtica/lineaEtica.html" class="e-text-white font-barlow e-text-medium">Línea ética</a>
         </div>
@@ -98,67 +93,71 @@
   </section>
   <div style="background-color: #EEF1F3;">
     <section class="body">
-      <div class="form_contact">
-        <div class="form_input">
-          <div class="control_input">
-            <div class="wrapper_input">
-              <div class="drop-down-list" id="select_type_document">
-                <input class="textfield textfield_select" type="text" name="" id="select_simulate_type_document_" required placeholder="">
-                <div class="options">
-                  <div valueOption="1" >Carnet de extranjeria</div>
-                  <div valueOption="2" >DNI</div>
-                  <div valueOption="3" >RUC</div>
+      <div class="content_form_contact">
+        <div class="form_contact">
+          <div class="form_input">
+            <div class="control_input">
+              <div class="wrapper_input">
+                <div class="drop-down-list" id="select_type_document">
+                  <input class="textfield textfield_select" type="text" name="" id="select_simulate_type_document_" required placeholder="">
+                  <div class="options">
+                    <div valueOption="1" >Carnet de extranjeria</div>
+                    <div valueOption="2" >DNI</div>
+                    <div valueOption="3" >RUC</div>
+                  </div>
+                  <span class="placeholder">Tipo de documento</span>
                 </div>
-                <span class="placeholder">Tipo de documento</span>
+              </div>
+            </div>
+            <div class="control_input">
+              <!-- clase de error "error-input" -->
+              <div class="wrapper_input">
+                <input class="textfield" type="text" maxlength="11" name="" id="number_document" required placeholder="Número de documento">
+                <span class="placeholder">Número de documento</span>
+                <!-- <span class="error-msg">Error </span> -->
               </div>
             </div>
           </div>
-          <div class="control_input">
-            <!-- clase de error "error-input" -->
-            <div class="wrapper_input error-input">
-              <input class="textfield" type="text" maxlength="11" name="" id="number_document" required placeholder="Número de documento">
-              <span class="placeholder">Número de documento</span>
-              <!-- <span class="error-msg">Error </span> -->
+          <div class="form_input">
+            <div class="control_input" style="width: 100%;">
+              <div class="wrapper_input">
+                <input class="textfield"  type="text" name="" id="" required placeholder="Nombre completo">
+                <span class="placeholder">Nombre completo</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form_input">
-          <div class="control_input">
+          <div class="form_input">
+            <div class="control_input">
+              <div class="wrapper_input">
+                <input class="textfield"  type="text" name="" id="" required placeholder="Teléfono">
+                <span class="placeholder">Teléfono</span>
+              </div>
+            </div>
+            <div class="control_input">
+              <div class="wrapper_input">
+                <input class="textfield"  type="text" name="" id="" required placeholder="Correo eletrónico">
+                <span class="placeholder">Correo eletrónico</span>
+              </div>
+            </div>
+          </div>
+          <div class="form_input">
             <div class="wrapper_input">
-              <input class="textfield"  type="text" name="" id="" required placeholder="Nombre completo">
-              <span class="placeholder">Nombre completo</span>
+              <textarea class="textfield textfield-area" name="" id="" rows="5" required placeholder="Escriba aquí su consulta"></textarea>
+              <span class="placeholder">Escriba aquí su consulta</span>
             </div>
           </div>
-          <div class="control_input">
-            <div class="wrapper_input">
-              <input class="textfield"  type="text" name="" id="" required placeholder="Correo eletrónico">
-              <span class="placeholder">Correo eletrónico</span>
+          <br><br>
+          <div class="content_button">
+            <div class="button">
+              Enviar consulta
             </div>
           </div>
         </div>
-        <div class="form_input">
-          <div class="control_input">
-            <div class="wrapper_input">
-              <input class="textfield"  type="text" name="" id="" required placeholder="Teléfono">
-              <span class="placeholder">Teléfono</span>
-            </div>
-          </div>
-          <div class="control_input">
-
-          </div>
-        </div>
-        <div class="form_input">
-          <div class="wrapper_input">
-            <textarea class="textfield textfield-area" name="" id="" rows="5" required placeholder="Escriba aquí su consulta"></textarea>
-            <span class="placeholder">Escriba aquí su consulta</span>
-          </div>
-        </div>
-        <br><br>
-        <div class="content_button">
-          <div class="button">
-            Enviar consulta
-          </div>
-        </div>
+        <picture>
+          <source media="(min-width: 1250px)" srcset="../images/contact_3.png">
+          <source media="(min-width: 850px)" srcset="../images/contact_2.png">
+          <img src="../images/contact_1.png" alt="federico suarez">
+        </picture>
       </div>
     </section>
   </div>
