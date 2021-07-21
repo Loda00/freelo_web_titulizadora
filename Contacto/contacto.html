@@ -75,91 +75,102 @@
     <div class="dashboard dashboard_children">
     </div>
   </section>
-  <section class="body">
-    <br><br>
-    <div class="come_back">
-      <a href="../Home/home.html">Home</a>
-      <img src="../images/arrow_right.png" alt="">
-      <span>Contáctanos</span>
-    </div>
-    <br><br>
-    <div class="custom_paragraph">
-      <h2 data-aos="fade-down">Envíanos un correo</h2>
-      <p data-aos="fade-up">
-        Completa el siguiente formulario para enviar tu consulta, te responderemos en un plazo de 48 horas.
-      </p>
-    </div>
-    <br><br><br><br>
-  </section>
   <div style="background-color: #EEF1F3;">
     <section class="body">
-      <div class="content_form_contact">
-        <div class="form_contact">
-          <div class="form_input">
-            <div class="control_input">
-              <div class="wrapper_input">
-                <div class="drop-down-list" id="select_type_document">
-                  <input class="textfield textfield_select" type="text" name="" id="select_simulate_type_document_" required placeholder="">
-                  <div class="options">
-                    <div valueOption="1" >Carnet de extranjeria</div>
-                    <div valueOption="2" >DNI</div>
-                    <div valueOption="3" >RUC</div>
+      <br><br>
+      <div class="come_back">
+        <a href="../Home/home.html">Home</a>
+        <img src="../images/arrow_right.png" alt="">
+        <span>Contáctanos</span>
+      </div>
+      <br><br>
+      <div class="custom_paragraph">
+        <h2 data-aos="fade-down">Envíanos un correo</h2>
+        <p data-aos="fade-up">
+          Completa el siguiente formulario para enviar tu consulta, te responderemos en un plazo de 48 horas.
+        </p>
+      </div>
+      <br><br><br><br>
+    </section>
+  </div>
+  <div style="background-color: #EEF1F3;">
+    <section class="body">
+      <div>
+        <div class="content_form_contact">
+          <div class="form_contact">
+            <div class="form_input">
+              <div class="control_input">
+                <div class="wrapper_input">
+                  <div class="drop-down-list" id="select_type_document">
+                    <input class="textfield textfield_select" type="text" name="" id="select_simulate_type_document_" required placeholder="">
+                    <div class="options">
+                      <div valueOption="1" >Carnet de extranjeria</div>
+                      <div valueOption="2" >DNI</div>
+                      <div valueOption="3" >RUC</div>
+                    </div>
+                    <span class="placeholder">Tipo de documento</span>
                   </div>
-                  <span class="placeholder">Tipo de documento</span>
+                </div>
+              </div>
+              <div class="control_input">
+                <!-- clase de error "error-input" -->
+                <div class="wrapper_input">
+                  <input class="textfield" type="text" maxlength="11" name="" id="number_document" required placeholder="Número de documento">
+                  <span class="placeholder">Número de documento</span>
+                  <!-- <span class="error-msg">Error </span> -->
                 </div>
               </div>
             </div>
-            <div class="control_input">
-              <!-- clase de error "error-input" -->
+            <div class="form_input">
+              <div class="control_input" style="width: 100%;">
+                <div class="wrapper_input">
+                  <input class="textfield"  type="text" name="" id="" required placeholder="Nombre completo">
+                  <span class="placeholder">Nombre completo</span>
+                </div>
+              </div>
+            </div>
+            <div class="form_input">
+              <div class="control_input">
+                <div class="wrapper_input">
+                  <input class="textfield"  type="text" name="" id="" required placeholder="Teléfono">
+                  <span class="placeholder">Teléfono</span>
+                </div>
+              </div>
+              <div class="control_input">
+                <div class="wrapper_input">
+                  <input class="textfield"  type="text" name="" id="" required placeholder="Correo eletrónico">
+                  <span class="placeholder">Correo eletrónico</span>
+                </div>
+              </div>
+            </div>
+            <div class="form_input">
               <div class="wrapper_input">
-                <input class="textfield" type="text" maxlength="11" name="" id="number_document" required placeholder="Número de documento">
-                <span class="placeholder">Número de documento</span>
-                <!-- <span class="error-msg">Error </span> -->
+                <textarea class="textfield textfield-area" name="" id="" rows="5" required placeholder="Escriba aquí su consulta"></textarea>
+                <span class="placeholder">Escriba aquí su consulta</span>
+              </div>
+            </div>
+            <br><br>
+            <div class="content_button">
+              <div class="button">
+                Enviar consulta
               </div>
             </div>
           </div>
-          <div class="form_input">
-            <div class="control_input" style="width: 100%;">
-              <div class="wrapper_input">
-                <input class="textfield"  type="text" name="" id="" required placeholder="Nombre completo">
-                <span class="placeholder">Nombre completo</span>
-              </div>
-            </div>
-          </div>
-          <div class="form_input">
-            <div class="control_input">
-              <div class="wrapper_input">
-                <input class="textfield"  type="text" name="" id="" required placeholder="Teléfono">
-                <span class="placeholder">Teléfono</span>
-              </div>
-            </div>
-            <div class="control_input">
-              <div class="wrapper_input">
-                <input class="textfield"  type="text" name="" id="" required placeholder="Correo eletrónico">
-                <span class="placeholder">Correo eletrónico</span>
-              </div>
-            </div>
-          </div>
-          <div class="form_input">
-            <div class="wrapper_input">
-              <textarea class="textfield textfield-area" name="" id="" rows="5" required placeholder="Escriba aquí su consulta"></textarea>
-              <span class="placeholder">Escriba aquí su consulta</span>
-            </div>
-          </div>
-          <br><br>
-          <div class="content_button">
-            <div class="button">
-              Enviar consulta
-            </div>
-          </div>
+          <picture class="form_image">
+            <source media="(min-width: 1250px)" srcset="../images/contact_3.png">
+            <source media="(min-width: 650px)" srcset="../images/contact_2.png">
+            <img src="../images/contact_1.png" alt="federico suarez">
+          </picture>
         </div>
-        <picture>
-          <source media="(min-width: 1250px)" srcset="../images/contact_3.png">
-          <source media="(min-width: 850px)" srcset="../images/contact_2.png">
-          <img src="../images/contact_1.png" alt="federico suarez">
-        </picture>
       </div>
     </section>
+    <div class="separator body body_download">
+      <h2>Para más información:</h2>
+      <div class="contact_download">
+        <img src="../images/download.svg" alt="">
+        <a href="" target="_blank" >Autorización para la recopilación y tratamiento de datos personales - ST (Adobe PDF / 974 KB)</a>
+      </div>
+    </div>
   </div>
   <footer>
     <div>
