@@ -76,12 +76,16 @@
   width: 100%;
 }
 
-.container_header > .header > a{
+.container_header > .header > a:nth-child(1){
+  text-decoration: none;
+}
+
+.container_header > .header > a:nth-child(2){
   transition: .2s ease-in;
   font-weight: bold;
 }
 
-.container_header > .header > a:hover{
+.container_header > .header > a:nth-child(2):hover{
   background-color: #FFFFFF;
   color: #252323;
   transition: .2s ease-out;
