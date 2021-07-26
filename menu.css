@@ -198,10 +198,6 @@ nav > .nav_two.children a:hover::after {
   .container_header {
     padding: 20px 39px 20px 39px;
   }
-  nav > .nav_two {
-    /* width: calc(100% - px); */
-    /* padding: 0px 25px 0px 0px; */
-  }
 
   nav > .nav_two a {
     margin: 10px 10px 0 10px;
