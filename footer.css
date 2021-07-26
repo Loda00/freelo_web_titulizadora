@@ -5,12 +5,11 @@ footer {
 footer > div{
   display: flex;
   justify-content: space-between;
-  /* margin: 0 94px 0 82px; */
   padding: 43px 0;
-  border-bottom: 1px solid #9EA2A2;
+  border-bottom: 1px solid #3D3D3D;
 }
 
-footer > div > img{
+footer > div > img {
   width: 114px;
   height: 40px;
 }
@@ -43,6 +42,11 @@ footer .footer_options a {
   color: white;
 }
 
+footer > .body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 @media screen and (max-width : 1200px){
   footer > div {
     flex-direction: column-reverse;
@@ -63,12 +67,18 @@ footer .footer_options a {
   }
 
   footer .footer_options a:last-child {
-    border-bottom: 1px solid #9EA2A2;
+    border-bottom: 1px solid #3D3D3D;
     margin-bottom: 20px;
   }
   footer > p{
     padding: 23px 82px 28px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width : 960px){
+  footer {
+    padding: 0 50px;
   }
 }
 
@@ -78,5 +88,11 @@ footer .footer_options a {
     align-items: center;
     padding: 15px 0;
     margin: 0 35px 0 20px;
+  }
+}
+
+@media screen and (max-width : 600px){
+  footer {
+    padding: 0 32px;
   }
 }

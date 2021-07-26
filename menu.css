@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .mouse {
@@ -111,8 +111,10 @@ nav > .nav_one {
   width: 186px;
   /* background-color: #B7B09C; */
   /* padding: 8px 0px 8px 96px; */
+  font-family: Barlow_Medium;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-size: 18px;
 }
 
 nav > .nav_two {
@@ -129,13 +131,14 @@ nav > .nav_two.children {
 }
 
 nav > .nav_two a {
+  font-family: Barlow_Bold;
   text-decoration: none;
   margin: 10px 15px 0px 15px;
   cursor: pointer;
 }
 
 nav > .nav_two.children a {
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
@@ -169,10 +172,26 @@ nav > .nav_two.children a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard_children h1 {
+  font-family: FS Joey;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 53px;
+  color: #FFFFFF;
 }
 
 .show_desktop {
   display: block;
+}
+
+
+.show_mobile {
+  display: none;
 }
 
 @media screen and (max-width : 1200px){
@@ -361,9 +380,13 @@ nav > .nav_two.children a:hover::after {
     padding: 20px 16px;
   }
 
-  /* nav > .nav_one {
-    padding: 8px 16px 8px;;
-  } */
+  nav > .nav_one {
+    font-size: 16px;
+  }
+
+  .show_mobile {
+    display: block;
+  }
 
   .hamburger > #check-nav:checked ~ label {
     position: fixed;

@@ -5,6 +5,27 @@
 }
 
 @font-face {
+  font-family: Barlow_Bold;
+  src: url('fonts/Barlow-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Barlow_Medium;
+  src: url('fonts/Barlow-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url('fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: FS_Joey_Heavy;
   src: url('fonts/FS_Joey-Heavy.otf') format('truetype');
   font-weight: normal;
@@ -62,10 +83,20 @@
 }
 
 .custom_paragraph > h2,h3 {
+  position: relative;
   font-family: 'FS_Joey_Bold';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
+  color: #252323;
+}
+
+.custom_paragraph > h4 {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
   color: #252323;
 }
 
@@ -141,18 +172,18 @@
 
 .card > .card_title {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  height: 56px;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
 .card > .card_title > img {
-  margin-right: 10px;
+  padding-bottom: 16px;
 }
 
 .card > .card_title > span {
-  font-family: Barlow;
+  display: block;
+  font-family: Barlow_bold;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -220,7 +251,7 @@
 .item_info > .item_info_title {
   min-height: 55px;
   margin-bottom: 10px;
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-weight: bold;
   font-size: 28px;
   color: #252323;
@@ -298,7 +329,7 @@
   padding: 14px 15.5px;
   text-decoration: none;
   font-size: 16px;
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-style: normal;
   font-weight: bold;
   color: #252323;
@@ -431,14 +462,14 @@
 
 .textfield.textfield_select:focus ~ .placeholder,
 .wrapper_input .textfield:focus ~ .placeholder {
-  color: #6A798B;
+  color: white;
   font-size: 14px;
 }
 
 .textfield.textfield_select:focus::placeholder,
 .wrapper_input .textfield:focus::placeholder {
   transition: .7s;
-  color: #6A798B; 
+  color: white; 
 }
 .wrapper_input .placeholder {
   position: absolute;
@@ -565,6 +596,7 @@
 .wrapper_input .textfield:not(:focus):valid ~ .placeholder {
   top: -4px;
   font-size: 14px;
+  color: white;
 }
 
 .drop-down-list > .textfield:focus ~ .options
@@ -625,7 +657,8 @@
 }
 
 .come_back span {
-  font-weight: 500;
+  font-family: Barlow_Medium;
+  color: #252323;
 }
 
 .sec_directorio {
@@ -636,6 +669,39 @@
 .sec_directorio > div:first-child {
   padding-right: 25px;
   padding-top: 100px;
+}
+
+.separator {
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
+
+.group_list {
+  width: 100%;
+}
+
+.group_list li:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.group_list li{
+  padding-left: 24px;
+  position: relative;
+  list-style: none;
+  font-family: FS Joey;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #53565A;
+}
+
+.group_list li::before {
+  content: '•';
+  position: absolute;
+  color: #B7B09C;
+  font-size: 20px;
+  line-height: 15px;
+  left: -1px;
 }
 
 @media screen and (max-width : 900px){
@@ -664,14 +730,29 @@
   .item_info > .item_info_paragraph {
     font-size: 16px;
   }
+
+  .separator {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .card > p {
+    margin: 12px 0 16px;
+  }
 }
 
 @media screen and (max-width : 800px){
   .custom_paragraph > h2,h3 {
     font-size: 40px;
   }
+
+  .custom_paragraph > h4 {
+    font-size: 20px;
+  }
+
   .custom_paragraph > p {
     font-size: 16px;
+    margin-top: 24px;
   }
   .content_cards {
     grid-gap: 24px;
@@ -687,12 +768,6 @@
     font-size: 16px;
   }
 }
-
-.separator {
-  padding-top: 120px !important;
-  padding-bottom: 120px !important;
-}
-
 
 @media screen and (max-width : 675px){
   .content_cards {
@@ -756,7 +831,7 @@
   }
 
   .card > .card_title {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     align-items: center;
   }
 
@@ -781,7 +856,7 @@
     border-left: none;
     padding-top: 24px;
     margin-top: 24px;
-    border-top: 1px solid #F2EFEF;;
+    border-top: 1px solid #E7EAEC;
   }
 
   .item_info > .item_info_title {
@@ -791,6 +866,10 @@
     font-size: 18px;
   }
 
+  .separator {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+  }
 }
 
 @media screen and (max-width : 620px){

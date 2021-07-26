@@ -11,6 +11,7 @@
 }
 
 .dashboard > div p {
+  font-family: Barlow;
   font-size: 28px;
 }
 
@@ -81,7 +82,7 @@
   background: #F9FAFB;
   max-width: 376px;
   height: auto;
-  padding: 46px 42px 90px;
+  padding: 46px 42px 40px;
   border: 2px solid #EEF1F3;
   border-radius: 8px;
   cursor: pointer;
@@ -99,10 +100,7 @@
 
 .item_service > .service_img {
   text-align: left;
-}
-
-.item_service > .service_img {
-  text-align: left;
+  height: 54px;
 }
 
 .item_service > p {
@@ -113,6 +111,7 @@
   line-height: 30px;
   color: #252323;
   text-align: left;
+  min-height: 70px;
 }
 
 .item_service:hover > p {
@@ -201,12 +200,13 @@
 }
 
 .frame_sura_info > h2 {
-  font-family: FS Joey;
+  font-family: 'FS_Joey_Bold';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 53px;
   color: #FFFFFF;
+  text-align: left;
 }
 
 .frame_sura_info > p {
@@ -346,6 +346,7 @@
   line-height: 30px;
   color: #252323;
   margin: 22px 0 32px;
+  min-height: 60px;
 }
 
 .methods_contact > div > p {
@@ -424,6 +425,10 @@
 
   .frame_sura {
     height: 500px;
+  }
+
+  .methods_contact > div > h3 {
+    font-size: 24px;
   }
 }
 
@@ -581,9 +586,14 @@
     border-left: none;
   }
 
+  .methods_contact > div > h3 {
+    font-size: 20px;
+  }
+
   .frame_sura_info > h2 {
     font-size: 24px;
     text-align: center;
+    /* font-weight: bold; */
   }
 
   .frame_sura_info > p {
