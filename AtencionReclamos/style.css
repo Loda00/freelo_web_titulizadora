@@ -163,10 +163,15 @@
   display: none;
 }
 
+.custom_paragraph span, .group_list span {
+  font-family: Barlow_Medium;
+}
+
 @media screen and (max-width : 1200px){
   .questions {
     flex-direction: column-reverse;
   }
+
   .questions_image {
     width: 100%;
     margin-bottom: 62px;
@@ -224,6 +229,10 @@
   .alert_warning {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .questions_image {
+    margin-bottom: 32px;
   }
 }
 

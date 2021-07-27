@@ -67,6 +67,10 @@
   display: none;
 }
 
+.custom_paragraph span {
+  font-family: Barlow_Medium;
+}
+
 @media screen and (max-width : 1200px){
   .grid_info_add h2 {
     font-size: 20px;
@@ -95,10 +99,12 @@
     padding: 16px;
     border: 1px solid #E5E2E2;
     border-radius: 8px;
+    background-color: white;
   }
 
   .table_info_add > div {
     padding-bottom: 24px;
+    margin-bottom: 24px;
     border-bottom: 1px solid #F2EFEF;
   }
 
@@ -130,7 +136,7 @@
     line-height: 24px;
     letter-spacing: 0.17px;
     color: #252323;
-    padding-top: 24px;
+    /* padding-top: 24px; */
   }
 
   .table_info_add a {

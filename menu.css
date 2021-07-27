@@ -290,12 +290,18 @@ nav > .nav_two.children a:hover::after {
     cursor: auto;
   }
 
+  .nav-mobile_item.flex-start {
+    justify-content: flex-start;
+    color: #B7B09C;
+    font-family: Barlow_Medium;
+  }
+
   .nav-mobile_button {
     display: block;
     margin: 0 auto;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 40px;
+    border-radius: 8px;
     max-width: 162px;
     padding: 16px 0px;
     text-align: center;

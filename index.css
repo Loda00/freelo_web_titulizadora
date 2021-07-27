@@ -704,6 +704,11 @@
   left: -1px;
 }
 
+.e-link {
+  color: #003C71;
+  font-family: Barlow_Medium;
+}
+
 @media screen and (max-width : 900px){
   .item_info > .item_info_title {
     font-size: 24px;
