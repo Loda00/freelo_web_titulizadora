@@ -50,6 +50,10 @@
   background-color: #EEF1F3;
 }
 
+.grid_info_add > div:nth-child(even) {
+  background-color: white;
+}
+
 .grid_info_add > div > div:nth-child(2) {
   border-left: 1px solid #BECAD3;
 }
