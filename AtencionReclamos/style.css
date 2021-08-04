@@ -135,6 +135,10 @@
   margin-top: 32px;
 }
 
+.questions_list > label > div span {
+  font-family: Barlow_Medium;
+}
+
 .questions_list > label > h4 {
   position: relative;
   font-family: Barlow;

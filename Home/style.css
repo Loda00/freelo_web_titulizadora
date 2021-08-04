@@ -12,7 +12,7 @@
 
 .dashboard > div p {
   font-family: Barlow;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .dashboard > div > div {
@@ -571,6 +571,11 @@
 
 
 @media screen and (max-width : 600px){
+  .item_service > p {
+    font-size: 20px;
+    min-height: 40px;
+  }
+
   footer > div {
     flex-direction: column-reverse;
     align-items: center;
@@ -602,10 +607,6 @@
 }
 
 @media screen and (max-width : 550px){
-  .item_service > p {
-    font-size: 20px;
-  }
-
   .frame_sura > .frame_sura_info {
     padding: 30px 24px;
 }

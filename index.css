@@ -46,6 +46,11 @@
   font-style: normal;
 }
 
+.e-text-center {
+  width: 100%;
+  text-align: center;
+}
+
 .e-text-white {
   color: #FFFFFF;
 }
@@ -198,6 +203,7 @@
   letter-spacing: 0.11px;
   color: #53565A;
   margin: 19px 0 35px;
+  text-align: center;
 }
 
 .card > .button_plus {
@@ -279,7 +285,7 @@
   justify-content: center;
 }
 
-.item_button_export.item_button_description > span {
+.item_button_export.item_button_description > p > span {
   font-family: Barlow;
   font-weight: normal;
   font-size: 12px;
@@ -290,7 +296,7 @@
   margin-bottom: 24px;
 }
 
-.item_button_export.item_button_description:last-child > span {
+.item_button_export.item_button_description:last-child > p > span {
   margin-bottom: 0px;
 }
 
@@ -409,7 +415,7 @@
 
 .wrapper_input {
   position: relative;
-  min-height: 95px;
+  min-height: 85px;
   width: 100%;
 }
 
@@ -874,6 +880,27 @@
   .separator {
     padding-top: 52px !important;
     padding-bottom: 52px !important;
+  }
+
+  .item_button_export > a {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .content_buttons_export .item_button_export:nth-child(1){
+    align-items: stretch;
+  }
+
+  .content_buttons_export .item_button_export:nth-child(2){
+    align-items: flex-end;
+  }
+
+  .content_buttons_export .item_button_export a {
+    width: calc(100% - 8px);
+  }
+
+  .item_button_export:nth-child(2) > a {
+    /* margin-left: 16px; */
   }
 }
 

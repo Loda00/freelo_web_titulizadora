@@ -112,9 +112,10 @@
   .terms_mobile > label {
     display: block;
     background-color: white;
-    padding: 24px;
+    padding: 18px;
     border-radius: 8px;
     margin-bottom: 16px;
+    border: 1px solid #E5E2E2;
   }
 
   .terms_mobile > label > h4 {
@@ -126,13 +127,13 @@
     line-height: 20px;
     color: #252323;
     cursor: pointer;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
   }
 
   .terms_mobile > label > h4 > img {
     position: absolute;
     right: 0px;
-    top: 17px;
+    top: 5px;
     transform: rotate(180deg);
   }
 
