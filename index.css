@@ -97,7 +97,7 @@
 }
 
 .custom_paragraph > h4 {
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -188,7 +188,7 @@
 
 .card > .card_title > span {
   display: block;
-  font-family: Barlow_bold;
+  font-family: Barlow_Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -303,7 +303,7 @@
 .content_buttons_export {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   border-left: 1px solid #BECAD3;
 }
 
@@ -365,7 +365,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Barlow;
+  font-family: Barlow_Medium;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -621,7 +621,7 @@
 }
 
 .button {
-  font-family: Barlow;
+  font-family: Barlow_Medium;
   background: #E3E829;
   border: 2px solid #E3E829;
   border-radius: 8px;
@@ -699,6 +699,10 @@
   font-size: 18px;
   line-height: 24px;
   color: #53565A;
+}
+
+.group_list li strong {
+  font-family: 'Barlow_Bold';
 }
 
 .group_list li::before {
@@ -823,6 +827,7 @@
 
   .content_buttons_export {
     flex-direction: inherit;
+    justify-content: center;
     border-left: none;
   }
   
@@ -838,7 +843,6 @@
 @media screen and (max-width : 620px){
   .custom_paragraph > h2,h3 {
     font-size: 24px;
-    font-family: Barlow;
   }
 
   .card > .card_title {

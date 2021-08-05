@@ -83,6 +83,7 @@
 .container_header > .header > a:nth-child(2){
   transition: .2s ease-in;
   font-weight: bold;
+  font-family: Barlow_Medium;
 }
 
 .container_header > .header > a:nth-child(2):hover{
@@ -320,7 +321,7 @@ nav > .nav_two.children a:hover::after {
     align-items: center;
     padding: 13px 0px 13px 0px;
     margin: 0px 39px 0 16px;
-    font-family: Barlow;
+    font-family: Barlow_Medium;
     font-style: normal;
     font-size: 16px;
     color: #FFFFFF;

@@ -9,7 +9,7 @@
 }
 
 .product > .description > h2 {
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -34,7 +34,7 @@
 }
 
 .product_bg > .description > h2 {
-  font-family: Barlow;
+  font-family: Barlow_Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
